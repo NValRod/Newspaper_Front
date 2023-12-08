@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+   --silver_white: #E5E2D9;
+   --navy: #001D3D;
+   --yellow: #ffbf1c;
+   --red:#780000;
+   --green: #254d32;
+   --black: #03071e;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0; /* Remove default margin */
+   padding: 0;
+   background-color: var(--silver_white);
+   color: var(--black);
+}
+
+a{
+   text-decoration: none;
+}
+
+@font-face {
+   font-family: 'Typewriter';
+   src: url('./assets/Fonts/jmh_typewriter/Typewriter-Black.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Typewriter-light';
+   src: url('./assets/Fonts/jmh_typewriter/Typewriter.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Typewriter-bold';
+   src: url('./assets/Fonts/jmh_typewriter/Typewriter-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+   font-family: 'Typewriter-thin';
+   src: url('./assets/Fonts/jmh_typewriter/Typewriter-Thin.ttf') format('truetype');
+}
+
+
+/*<-------- Buttons -------->*/
+
+button {
+   height: 3em;
+   padding: auto 2px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   background: transparent;
+   /* box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2); */
+   overflow: hidden;
+   border: none;
+   cursor: pointer;
+}
+
+button:after {
+   content: " ";
+   width: 0%;
+   height: 100%;
+   background: #FFC300;
+   position: absolute;
+   transition: all 0.4s ease-in-out;
+   right: 0;
+}
+
+button:hover::after {
+   right: auto;
+   left: 0;
+   width: 100%;
+}
+
+button span {
+   text-align: center;
+   text-decoration: none;
+   width: 100%;
+   padding: 18px 15px;
+   color: var(--black);
+   font-size: 1.125em;
+   font-weight: 700;
+   letter-spacing: 0.2em;
+   z-index: 20;
+   transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+   color: #183153;
+   animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+   0% {
+      transform: scale(1);
+   }
+
+   50% {
+      transform: scale(0.95);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}

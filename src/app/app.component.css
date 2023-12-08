@@ -1,0 +1,35 @@
+.navbar {
+   background-color: transparent;
+   overflow: hidden;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   border-bottom: 1.5px solid var(--black);
+   height: 3rem;
+}
+
+.brand-title{
+   font-family: 'Typewriter', sans-serif !important;
+   text-transform: uppercase;
+}
+
+
+.navbar a, .brand-title {
+   float: left;
+   display: block;
+   color:var(--black);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: 'Typewriter-light', sans-serif;  
+}
+
+.navbar a{
+   text-transform: capitalize;
+}
+
+.content {
+   padding: 20px;
+}
+
