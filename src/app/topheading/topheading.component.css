@@ -12,8 +12,6 @@
    grid-gap: 4rem;
 }
 
-
-
 .article-cnt{
    font-family: 'typewriter', sans-serif;
    font-weight: 900;
@@ -21,6 +19,7 @@
 
 .article-cnt img{
    width: 350px;
+   height: 230px;
    border-radius: 5px;
    margin: 10px auto;
 }
@@ -51,7 +50,7 @@
    text-transform: capitalize;
    font-size: 5.3rem;
    white-space: nowrap;
-   width: 56%;
+   width: 62%;
    animation: typing 2s steps(20);
    overflow: hidden;
    margin-top: 1rem;
