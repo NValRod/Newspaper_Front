@@ -1,14 +1,22 @@
 
 
-  <div class="navbar">
-      <h1 class="brand-title">TW Post</h1>
+  <div *ngIf="mostrarNavegacion" class="navbar">
+    <div class="navbar">
+      <div class="brand-cnt">
+        <img class="brand-logo" src="../assets/Imgs/TMPost_logo.svg" alt="">
+        <h1 class="brand-title">TW Post</h1>
+      </div>
       <a routerLink="">Home</a>
-      <a routerLink="" >sports</a>
-      <a routerLink="" >technology</a>
-      <a routerLink="" >entertainment</a>
-      <a routerLink="" >health</a>
-      <a routerLink="" >science</a>
-      <a routerLink="" >business</a>
+      <a routerLink="sport" >sports</a>
+      <a routerLink="tech" >technology</a>
+      <a routerLink="entertainment" >entertainment</a>
+      <a routerLink="health" >health</a>
+      <a routerLink="science" >science</a>
+      <a routerLink="business" >business</a>
+      <a routerLink="suscription" (click)="mostrarNavegacion = false" class="suscription-link">Subscription</a>
+
+  </div>
+
   </div>
 
   <router-outlet></router-outlet>

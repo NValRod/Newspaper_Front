@@ -3,9 +3,15 @@
    overflow: hidden;
    margin: 0;
    display: flex;
+   justify-content: space-between;
    align-items: center;
    border-bottom: 1.5px solid var(--black);
    height: 3rem;
+}
+
+.brand-cnt{
+   display: flex;
+   margin-left: 1rem;
 }
 
 .brand-title{
@@ -13,6 +19,10 @@
    text-transform: uppercase;
 }
 
+.brand-logo{
+   width: 2rem;
+   margin-right: -15px;
+}
 
 .navbar a, .brand-title {
    float: left;
@@ -31,5 +41,11 @@
 
 .content {
    padding: 20px;
+}
+
+.suscription-link{
+   margin-left: 18em;
+   color: var(--red) !important;
+   font-weight: 900;
 }
 

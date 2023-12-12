@@ -7,11 +7,25 @@ import { TopheadingComponent } from './topheading/topheading.component';
 
 import { HttpClientModule } from "@angular/common/http";
 import { ArticlesserviceService } from "./services/articlesservice.service";
+import { TechnewsComponent } from './technews/technews.component';
+import { SportnewsComponent } from './sportnews/sportnews.component';
+import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
+import { HealthnewsComponent } from './healthnews/healthnews.component';
+import { SciencenewsComponent } from './sciencenews/sciencenews.component';
+import { BusinessnewsComponent } from './businessnews/businessnews.component';
+import { SuscriptionComponent } from './suscription/suscription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopheadingComponent
+    TopheadingComponent,
+    TechnewsComponent,
+    SportnewsComponent,
+    EntertainmentnewsComponent,
+    HealthnewsComponent,
+    SciencenewsComponent,
+    BusinessnewsComponent,
+    SuscriptionComponent
   ],
   imports: [
     BrowserModule,
